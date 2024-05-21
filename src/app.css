@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Open Sans;
+  font-family: Montserrat, "Open Sans";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -608,6 +608,14 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.font-h2 {
+  font-family: "Alfa Slab One", "Open Sans";
+}
+
+.font-h3 {
+  font-family: "Bebas Neue", "Open Sans";
 }
 
 .text-2xl {
