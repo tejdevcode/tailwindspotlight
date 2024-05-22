@@ -14,23 +14,27 @@
 </head>
 
 <body>
-   <h1 class="text-5xl font-light underline">
-      Hello world!
-   </h1>
-   <nav id="nav" class="max-w-6xl mx-auto flex flex-row justify-between mt-3 px-12 py-3">
-      <h1 class="text-2xl uppercase font-h2">Project Showcase</h1>
-      <div class="flex flex-row items-center gap-5 md:gap-10">
-         <div class="group">
-            <a href="#hero" class="p-2 text-sm font-semibold group-hover:text-indigo-600">About</a>
-            <div class="group-hover:border-b mx-3 mt-1 duration-200"></div>
-         </div>
-
-         <div class="group">
-            <a href="#show-case" class="p-2 text-sm font-semibold group-hover:text-indigo-600">Projects</a>
-            <div class="group-hover:border-b mx-3 mt-1 duration-200"></div>
+   <header class="pt-11">
+      <div class="container flex justify-between">
+         <div class="sitelogo"><a href="#"><img src="./src/img/sitelogo.png" alt="Logo"></a></div>
+         <div class="dlnum font-sans font-bold">
+            <figure class="inline-block align-middle me-1 mb-1"><img src="./src/img/scooterico.svg" alt="schooterico"
+                  class="w-9">
+            </figure>
+            <a href="tel:+1234567890" class="text-uibrown">Express Delivery +1 234 567 890</a>
          </div>
       </div>
-   </nav>
+      <div class="container">
+         <nav id="nav" class="flex justify-end">
+            <div class="max-w-6xl flex mt-3 gap-5 md:gap-10 font-h3">
+               <a href="#hero" class="p-2 text-sm font-semibold group-hover:text-indigo-600">Home</a>
+               <a href="#menu" class="p-2 text-sm font-semibold group-hover:text-indigo-600">Menu</a>
+               <a href="#ourstory" class="p-2 text-sm font-semibold group-hover:text-indigo-600">Our story</a>
+               <a href="#contactus" class="p-2 text-sm font-semibold group-hover:text-indigo-600">contact us</a>
+            </div>
+         </nav>
+      </div>
+   </header>
 </body>
 
 </html>
