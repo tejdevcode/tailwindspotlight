@@ -8,13 +8,15 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="./src/css/slick.css" />
+   <link href="./src/css/slick-theme.css" rel="stylesheet">
    <link href="./src/app.css" rel="stylesheet">
 </head>
 
 <body>
-   <header class="pt-11">
+   <header class="pt-11 absolute z-10 w-full">
       <div class="container flex justify-between">
          <div class="sitelogo"><a href="#"><img src="./src/img/sitelogo.png" alt="Logo"></a></div>
          <div class="dlnum font-sans font-bold">
@@ -26,15 +28,193 @@
       </div>
       <div class="container">
          <nav id="nav" class="flex justify-end">
-            <div class="max-w-6xl flex mt-3 gap-5 md:gap-10 font-h3">
-               <a href="#hero" class="p-2 text-sm font-semibold group-hover:text-indigo-600">Home</a>
-               <a href="#menu" class="p-2 text-sm font-semibold group-hover:text-indigo-600">Menu</a>
-               <a href="#ourstory" class="p-2 text-sm font-semibold group-hover:text-indigo-600">Our story</a>
-               <a href="#contactus" class="p-2 text-sm font-semibold group-hover:text-indigo-600">contact us</a>
+            <div class="max-w-6xl flex gap-5 md:gap-10 font-h3fm text-xl text-uibrown">
+               <a href="#hero" class="p-2 font-semibold group-hover:text-indigo-600">Home</a>
+               <a href="#menu" class="p-2 font-semibold group-hover:text-indigo-600">Menu</a>
+               <a href="#ourstory" class="p-2 font-semibold group-hover:text-indigo-600">Our story</a>
+               <a href="#contactus" class="p-2 font-semibold group-hover:text-indigo-600">contact us</a>
             </div>
          </nav>
       </div>
    </header>
+
+   <!-- banner -->
+   <section class="banner relative z-0">
+      <div class="absolute z-0 w-full min-h-full lg:h-screen object-cover"><img src="./src/img/bnrbg.jpg" alt=""
+            class="w-full h-full "></div>
+      <div class="container relative z-10 ">
+         <div class="bnrinner flex justify-between py-11 items-center h-screen md:gap-8 min-h-96">
+            <div class="bnrtxt md:w-1/2">
+               <div class="bnrtag text-xl font-h3fm py-2 px-4 font-medium tracking-wide inline-block">
+                  It is a good time for the great taste of burgers
+               </div>
+               <h1 class="font-h1fm text-h1 text-uibrown uppercase">Burger</h1>
+               <h2 class="font-h1fm text-h2 text-uibrown uppercase">Week</h2>
+            </div>
+            <div class="bnrmedia relative z-20 md:w-1/2 h-96">
+               <div class="media1 absolute w-full z-40 bottom-0"><img src="./src/img/bnrpricetag.png" alt=""></div>
+               <div class="media2 absolute w-full z-30 text-center bottom-0">
+                  <img src="./src/img/bnrburger.png" alt="" class="inline-block">
+               </div>
+               <div class="media4 absolute w-full z-20 text-right bottom-3 -right-14 rotate-3">
+                  <img src="./src/img/bnrdrink.png" alt="" class="inline-block">
+               </div>
+               <div class="media3 absolute w-full z-10 text-left">
+                  <img src="./src/img/bnrfries.png" alt="" class="inline-block">
+               </div>
+               <div class="media5 absolute w-full z-0"><img src="./src/img/bnrglow.png" alt=""></div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- tryit -->
+   <section class="tryit py-10 sm:py-14 lg:py-20">
+      <div class="container grid gap-6 md:gap-8 lg:gap-12">
+         <div class="col-span-2 md:col-span-1 relative">
+            <figure><img src="./src/img/tryit1.png" alt="" class="w-full h-full object-cover"></figure>
+            <div class="font-h3fm absolute top-7 left-6 z-10">
+               <h3 class="text-white text-h3 font-semibold"> Most Popular
+                  Burger</h3>
+            </div>
+         </div>
+         <div class="col-span-2 md:col-span-1 grid gap-6 md:gap-8 lg:gap-10">
+            <div class=" relative">
+               <figure><img src="./src/img/tryit2.png" alt="" class="w-full h-full object-cover"></figure>
+               <div class="font-h3fm absolute top-7 left-6 z-10">
+                  <h3 class="text-white text-h3 font-semibold"><span class="text-2xl block">Try it</span>More fun <br>
+                     more taste
+                  </h3>
+               </div>
+            </div>
+            <div class=" relative">
+               <figure><img src="./src/img/tryit3.png" alt="" class="w-full h-full object-cover"></figure>
+               <div class="font-h3fm absolute top-7 left-6 z-10">
+                  <h3 class="text-white text-h3 font-semibold"><span class="text-2xl block">Try it</span>Fresh & Chili
+                  </h3>
+               </div>
+            </div>
+         </div>
+         <div class="w-full text-center col-span-2">
+            <button
+               class="btn font-h3fm text-uibrown bg-uiyellow p-3 px-5 text-2xl hover:bg-uibrown hover:text-uiyellow transition ease-out duration-300 font-medium">Always
+               Tasty Burger</button>
+         </div>
+      </div>
+   </section>
+
+   <!-- choose and enjoy -->
+   <section class="enjoy pb-10 sm:pb-14 lg:pb-20">
+      <div class="container">
+         <div class="top_txt text-center mb-8 md:mb-14">
+            <h2 class="">Choose & Enjoy</h2>
+            <p class="leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+               incididunt ut labore et
+               dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+               lacus vel facilisis. </p>
+         </div>
+         <div class="enjoybox grid gap-8 grid-cols-3">
+            <div class="text-center">
+               <figure class="md:h-80 flex items-center"><img src="./src/img/enjoy1.png" alt=""></figure>
+               <h3>Lorem ipsum dolor</h3>
+               <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+               <button class="btn red">Order Now</button>
+            </div>
+            <div class="text-center">
+               <figure class="md:h-80 flex items-center"><img src="./src/img/enjoy2.png" alt=""></figure>
+               <h3>Lorem ipsum dolor</h3>
+               <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+               <button class="btn red">Order Now</button>
+            </div>
+            <div class="text-center">
+               <figure class="md:h-80 flex items-center"><img src="./src/img/enjoy1.png" alt=""></figure>
+               <h3>Lorem ipsum dolor</h3>
+               <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+               <button class="btn red">Order Now</button>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- upcoming events -->
+   <section class="upevent pb-10 sm:pb-14 lg:pb-20 lg:pt-8">
+      <div class="container">
+         <div class="sliderbox shadow-xl">
+            <div class="sliditem">
+               <div class="sliditemin flex gap-4 md:gap-8 md:grid-cols-2 p-3 md:p-7">
+                  <div class="w-3/6 md:pb-9">
+                     <h3 class="font-h1fm font-medium tracking-wide mb-3 md:mb-7"><span
+                           class="font-h3fm block text-3xl tracking-wider">Discover</span>Upcoming
+                        Events</h3>
+                     <p class="text-xl leading-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                        gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                  </div>
+                  <div class="w-3/5">
+                     <figure><img src="./src/img/upcomingslide.jpg" alt=""></figure>
+                  </div>
+               </div>
+            </div>
+            <div class="sliditem ">
+               <div class="sliditemin flex gap-4 md:gap-8 md:grid-cols-2 p-7">
+                  <div class="w-3/6 md:pb-9">
+                     <h3 class="font-h1fm font-medium tracking-wide mb-3 md:mb-7"><span
+                           class="font-h3fm block text-3xl tracking-wider">Discover</span>Upcoming
+                        Events</h3>
+                     <p class="text-xl leading-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                        gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                  </div>
+                  <div class="w-3/5">
+                     <figure><img src="./src/img/upcomingslide.jpg" alt=""></figure>
+                  </div>
+               </div>
+            </div>
+            <div class="sliditem">
+               <div class="sliditemin flex gap-4 md:gap-8 md:grid-cols-2 p-7">
+                  <div class="w-3/6 md:pb-9">
+                     <h3 class="font-h1fm font-medium tracking-wide mb-3 md:mb-7"><span
+                           class="font-h3fm block text-3xl tracking-wider">Discover</span>Upcoming
+                        Events</h3>
+                     <p class="text-xl leading-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                        gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                  </div>
+                  <div class="w-3/5">
+                     <figure><img src="./src/img/upcomingslide.jpg" alt=""></figure>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <!-- reservation -->
+   <section class="book">
+      <div class="container">
+         <div class="top_txt text-center">
+            <h2 class="font-h1fm font-medium tracking-wide mb-3 md:mb-7">
+               <span class="font-h3fm block text-3xl tracking-wider font-medium mb-3">Reservation</span>Book your table
+            </h2>
+         </div>
+         <form class="max-w-3xl mx-auto grid grid-cols-2 gap-5">
+            <input type="text" id="nameinput" class="" placeholder="Name">
+            <input type="email" id="emailinput" class="" placeholder="Email">
+            <input type="text" id="dateinput" class="" placeholder="Date">
+            <input type="text" id="timeinput" class="" placeholder="Time">
+            <input type="text" id="peopleinput" class="" placeholder="People">
+            <input type="submit" id="submitinput"
+               class="uppercase bg-uired text-white font-h1fm cursor-pointer hover:bg-uiyellow transition ease-out duration-300"
+               value="Find a table">
+         </form>
+      </div>
+   </section>
+
+   <script type="text/javascript" src="./src/js/jquery-3.7.1.min.js"></script>
+   <script type="text/javascript" src="./src/js/slick.min.js"></script>
+   <script type="text/javascript" src="./src/js/general.js"></script>
+
 </body>
 
 </html>
