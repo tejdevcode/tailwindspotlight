@@ -723,10 +723,6 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -779,6 +775,10 @@ video {
   height: 100vh;
 }
 
+.min-h-96 {
+  min-height: 24rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -799,28 +799,12 @@ video {
   width: 100%;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
-}
-
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
-}
-
 .max-w-3xl {
   max-width: 48rem;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .border-collapse {
@@ -862,10 +846,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-4 {
@@ -1162,6 +1142,10 @@ h3 {
   height: 570px;
 }
 
+.bnrinner {
+  min-height: 810px;
+}
+
 .bnrmedia .media3 {
   left: -34px;
   bottom: 130px;
@@ -1213,10 +1197,12 @@ form input {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
   padding: 0.625rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-family: "Bebas Neue", "Open Sans";
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
+  color: rgb(61 37 20 / var(--tw-text-opacity));
 }
 
 form input:focus {
@@ -1224,32 +1210,6 @@ form input:focus {
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
-}
-
-@media (prefers-color-scheme: dark) {
-  form input {
-    --tw-border-opacity: 1;
-    border-color: rgb(75 85 99 / var(--tw-border-opacity));
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity));
-  }
-
-  form input::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-placeholder-opacity));
-  }
-
-  form input::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-placeholder-opacity));
-  }
-
-  form input:focus {
-    --tw-border-opacity: 1;
-    border-color: rgb(59 130 246 / var(--tw-border-opacity));
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
-  }
 }
 
 .hover\:bg-uibrown:hover {
