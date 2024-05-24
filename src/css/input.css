@@ -108,5 +108,17 @@ h3 {
 }
 
 form input {
-   @apply border border-gray-300 text-xl rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-uibrown font-h3fm uppercase
+   @apply border border-gray-300 text-xl rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full px-5 py-3 placeholder:text-uibrown placeholder:font-h3fm placeholder:uppercase placeholder:font-medium
+}
+
+.ftrsocial svg {
+   @apply fill-black hover:fill-white w-5 h-5
+}
+
+.ftrsocial a:hover svg {
+   @apply fill-white
+}
+
+.ftrsocial a {
+   @apply bg-white rounded-full h-8 w-8 m-1 cursor-pointer grid place-items-center hover:bg-uired
 }
