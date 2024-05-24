@@ -12,6 +12,7 @@
       rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="./src/css/slick.css" />
    <link href="./src/css/slick-theme.css" rel="stylesheet">
+   <link href="./src/css/animate.css" rel="stylesheet">
    <link href="./src/app.css" rel="stylesheet">
 </head>
 
@@ -115,19 +116,19 @@
          </div>
          <div class="enjoybox grid gap-8 grid-cols-3">
             <div class="text-center">
-               <figure class="md:h-80 flex items-center"><img src="./src/img/enjoy1.png" alt=""></figure>
+               <figure class="md:h-80 flex items-center floating"><img src="./src/img/enjoy1.png" alt=""></figure>
                <h3>Lorem ipsum dolor</h3>
                <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                <button class="btn red">Order Now</button>
             </div>
             <div class="text-center">
-               <figure class="md:h-80 flex items-center"><img src="./src/img/enjoy2.png" alt=""></figure>
+               <figure class="md:h-80 flex items-center floating f2"><img src="./src/img/enjoy2.png" alt=""></figure>
                <h3>Lorem ipsum dolor</h3>
                <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                <button class="btn red">Order Now</button>
             </div>
             <div class="text-center">
-               <figure class="md:h-80 flex items-center"><img src="./src/img/enjoy1.png" alt=""></figure>
+               <figure class="md:h-80 flex items-center floating f3"><img src="./src/img/enjoy1.png" alt=""></figure>
                <h3>Lorem ipsum dolor</h3>
                <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                <button class="btn red">Order Now</button>
@@ -191,14 +192,14 @@
    </section>
 
    <!-- reservation -->
-   <section class="book pb-10 sm:pb-14 lg:pb-20">
-      <div class="container">
+   <section class="book pb-10 sm:pb-14 lg:pb-20 relative">
+      <div class="container relative pb-16">
          <div class="top_txt text-center">
             <h2 class="font-h1fm font-medium tracking-wide mb-3 md:mb-7">
                <span class="font-h3fm block text-3xl tracking-wider font-medium mb-3">Reservation</span>Book your table
             </h2>
          </div>
-         <form class="max-w-3xl mx-auto grid grid-cols-2 gap-4 md:gap-6">
+         <form class="max-w-3xl mx-auto grid grid-cols-2 gap-4 md:gap-6 px-16 py-2 bg-stone-50/50">
             <input type="text" id="nameinput" class="" placeholder="Name">
             <input type="email" id="emailinput" class="" placeholder="Email">
             <input type="text" id="dateinput" class="" placeholder="Date">
@@ -208,41 +209,52 @@
                class="uppercase bg-uired text-white font-h1fm cursor-pointer hover:bg-uiyellow transition ease-out duration-300 tracking-wider"
                value="Find a table">
          </form>
+         <div class="bookmedia1 absolute -top-12 -z-10"><img src="./src/img/contctbr1.png" alt=""></div>
+         <div class="bookmedia2 absolute left-0 -bottom-9 max-w-14 lg:left-24 -z-10"><img src="./src/img/contctbr3.png"
+               alt="">
+         </div>
       </div>
+      <div class="bookmedia2 absolute right-0 bottom-4 -z-10"><img src="./src/img/contctbr2.png" alt=""></div>
+
    </section>
 
    <!-- footer -->
-   <footer class="relative z-0 py-10 sm:py-14 lg:py-20">
+   <footer class="relative z-0 pt-10 sm:pt-14 lg:pt-20 pb-7">
+      <div
+         class="ftrbg absolute left-0 top-0 -z-10 w-full h-full bg-no-repeat bg-[length:100%] bg-fixed bg-[center_top_23rem]"
+         style="background-image: url(./src/img/ftrbg.jpg);">
+      </div>
       <div class="container">
-         <div class="ftrbg"><img src="./src/img/ftrbg.jpg" alt="" class="object-cover absolute left-0 top-0 -z-10">
-         </div>
-         <div class="flex justify-between text-white">
-            <div class="ftrinfo">
-               <figure><img src="./src/img/ftrlogo.png" alt=""></figure>
+         <figure class="block"><img src="./src/img/ftrlogo.png" alt=""></figure>
+         <div class="flex justify-between text-white  my-4 md:my-8 gap-2">
+            <div class="ftrinfo w-2/3 max-w-lg">
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                   dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viver ra maecenas accumsan
                   lacus vel facilisis. </p>
             </div>
-            <div class="ftrcontact">
-               <div class="flex">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-white text-xl">
+            <div class="ftrcontact grid gap-1">
+               <div class="flex items-start">
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-white text-xl w-7 h-7 mr-5">
                      <path
                         d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
-                  </svg>
-                  Main Road, Building Name, Country
+                  </svg> -->
+                  <figure class="w-7 h-7 mr-5 "><img src="./src/img/locico.svg" alt="" class="w-full" /></figure>
+                  <span class="mt-1 font-h3fm tracking-wider">Main Road, Building Name, Country</span>
                </div>
-               <a href="mailto:info@companyname.com" class="flex">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-white text-xl w-7">
+               <a href="mailto:info@companyname.com" class="flex items-start hover:text-uiyellow inline-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-white text-xl w-7 mr-5">
                      <path
                         d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                   </svg>
-                  info@companyname.com
+                  <span class="font-h3fm tracking-wider">info@companyname.com</span>
                </a>
 
             </div>
          </div>
-         <div class="flex justify-between text-white">
-            <div class="copy">© Company Name 2026. All rights reserved.</div>
+         <div class="flex justify-between text-white items-center md:mt-24">
+            <div class="copy font-h3fm tracking-wider">© 2015 - <span id="footeryear"></span> Tej R. All Rights
+               Reserved.
+            </div>
             <div class="ftrsocial flex">
                <a href="#" target="_blank" class="">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -275,6 +287,7 @@
 
    <script type="text/javascript" src="./src/js/jquery-3.7.1.min.js"></script>
    <script type="text/javascript" src="./src/js/slick.min.js"></script>
+   <script type="text/javascript" src="./src/js/wow.min.js"></script>
    <script type="text/javascript" src="./src/js/general.js"></script>
 
 </body>
