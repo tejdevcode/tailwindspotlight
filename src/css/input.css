@@ -56,16 +56,58 @@ nav {
    letter-spacing: 4px;
 }
 
+h1 {
+   @apply font-h1fm text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-h1 text-uibrown
+}
+
 h2 {
-   @apply font-h1fm text-h2 text-uibrown uppercase mb-5;
+   @apply font-h1fm text-2xl sm:text-3xl md:text-4xl lg:text-h2 text-uibrown uppercase mb-3 sm:mb-4 md:mb-5;
 }
 
 h3 {
-   @apply font-h3fm text-h3 text-uibrown uppercase mb-4 font-bold;
+   @apply font-h3fm text-3xl lg:text-h3 text-uibrown uppercase mb-4 font-bold;
 }
+
+nav a {
+   @apply px-4 py-1.5 sm:p-2 block sm:inline-block w-full sm:w-auto hover:text-uired border-b-white border-b sm:border-0
+}
+
+.navbtn.on>div:nth-child(2) {
+   height: 0;
+}
+
+.navbtn>div:first-child,
+.navbtn.on>div:nth-child(3) {
+   transform: rotate(0deg) translateY(0px);
+}
+
+.navbtn.on>div:first-child {
+   transform: rotate(45deg) translateY(4px);
+}
+
+.navbtn.on>div:nth-child(3) {
+   transform: rotate(-45deg) translateY(-4px);
+}
+
+
+#nav.on {
+   visibility: visible;
+}
+
 
 .btn.red {
    @apply bg-uired font-h1fm text-white font-medium uppercase px-6 py-2 md:px-8 md:py-4 tracking-wider transition ease-out duration-300 hover:bg-uiyellow hover:text-uibrown
+}
+
+.btn.red {
+   background: linear-gradient(90deg, #ffc045 50%, #bf2222 0);
+   background-size: 200% 100%;
+   background-position: -100%;
+   transition: background-position .6s cubic-bezier(.16, 1, .3, 1);
+}
+
+.btn.red:hover {
+   background-position: 0;
 }
 
 .bnrtxt h1,
@@ -82,7 +124,7 @@ h3 {
 }
 
 .bnrinner {
-   min-height: 810px;
+   @apply sm:min-h-[710px]
 }
 
 .bnrmedia .media3 {
@@ -91,11 +133,11 @@ h3 {
 }
 
 .slick-dots {
-   @apply text-left pl-3 md:pl-7
+   @apply text-left pl-3 lg:pl-7
 }
 
 .slick-dots li {
-   @apply m-0.5 -mt-8 bottom-20
+   @apply m-0.5 lg:-mt-8 bottom-14 lg:bottom-20
 }
 
 .slick-dots li button:before {
@@ -123,6 +165,10 @@ form input {
    @apply bg-white rounded-full h-8 w-8 m-1 cursor-pointer grid place-items-center hover:bg-uired
 }
 
+/* .ftrbg {
+   background-position: center top 26rem;
+} */
+
 .bookmedia1 {
    left: -10%;
 }
@@ -132,7 +178,6 @@ form input {
    animation-duration: 5s;
    animation-iteration-count: infinite;
    animation-timing-function: ease-in-out;
-   margin-left: 30px;
    margin-top: 5px;
 }
 
