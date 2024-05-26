@@ -52,10 +52,6 @@
    @apply max-w-7xl mx-auto px-3;
 }
 
-nav {
-   letter-spacing: 4px;
-}
-
 h1 {
    @apply font-h1fm text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-h1 text-uibrown
 }
@@ -74,11 +70,13 @@ nav a {
 
 .navbtn.on>div:nth-child(2) {
    height: 0;
+   transition: 0.5s all;
 }
 
 .navbtn>div:first-child,
 .navbtn.on>div:nth-child(3) {
    transform: rotate(0deg) translateY(0px);
+   transition: 0.5s all;
 }
 
 .navbtn.on>div:first-child {
@@ -89,11 +87,9 @@ nav a {
    transform: rotate(-45deg) translateY(-4px);
 }
 
-
 #nav.on {
    visibility: visible;
 }
-
 
 .btn.red {
    @apply bg-uired font-h1fm text-white font-medium uppercase px-6 py-2 md:px-8 md:py-4 tracking-wider transition ease-out duration-300 hover:bg-uiyellow hover:text-uibrown
@@ -119,10 +115,6 @@ nav a {
    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='4%2c 12' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 
-.bnrmedia {
-   height: 570px;
-}
-
 .bnrinner {
    @apply sm:min-h-[710px]
 }
@@ -143,7 +135,6 @@ nav a {
 .slick-dots li button:before {
    @apply text-6xl hover:text-uibrown transition ease-out duration-300
 }
-
 
 .slick-dots li.slick-active button:before {
    @apply text-uiyellow
@@ -189,6 +180,41 @@ form input {
    animation-name: floating3;
 }
 
+.cirelanim {
+   text-decoration: none;
+   width: 170px;
+   height: 170px;
+   display: block;
+   position: relative;
+   left: 50px;
+   transform-origin: 50% 93px;
+   animation: parent-anim 5s linear infinite;
+}
+
+.cirelanim .animitem {
+   animation: child-anim 5s linear infinite;
+}
+
+@keyframes parent-anim {
+   0% {
+      transform: rotate(0);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes child-anim {
+   0% {
+      transform: rotate(0);
+   }
+
+   100% {
+      transform: rotate(-360deg);
+   }
+}
+
 @keyframes floating {
    0% {
       transform: translate(0, 0px);
@@ -228,41 +254,5 @@ form input {
 
    100% {
       transform: translate(0, -0px);
-   }
-}
-
-.cirelanim {
-   text-decoration: none;
-   width: 170px;
-   height: 170px;
-   display: block;
-   position: relative;
-   left: 50px;
-   transform-origin: 50% 93px;
-
-   animation: parent-anim 5s linear infinite;
-}
-
-.cirelanim .animitem {
-   animation: child-anim 5s linear infinite;
-}
-
-@keyframes parent-anim {
-   0% {
-      transform: rotate(0);
-   }
-
-   100% {
-      transform: rotate(360deg);
-   }
-}
-
-@keyframes child-anim {
-   0% {
-      transform: rotate(0);
-   }
-
-   100% {
-      transform: rotate(-360deg);
    }
 }
