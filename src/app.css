@@ -1338,7 +1338,6 @@ nav a:hover {
 
 .navbtn.on>div:nth-child(2) {
   height: 0;
-  transition: 0.5s all;
 }
 
 .navbtn>div:first-child,
