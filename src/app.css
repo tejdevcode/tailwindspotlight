@@ -1640,6 +1640,18 @@ form input:focus {
   }
 }
 
+@media(max-width:767px) {
+  .mobanimhide {
+    overflow-x: hidden;
+  }
+
+  @media (min-width: 640px) {
+    .mobanimhide {
+      overflow-x: auto;
+    }
+  }
+}
+
 .hover\:bg-uibrown:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(61 37 20 / var(--tw-bg-opacity));

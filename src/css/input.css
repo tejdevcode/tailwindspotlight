@@ -255,3 +255,9 @@ form input {
       transform: translate(0, -0px);
    }
 }
+
+@media(max-width:767px) {
+   .mobanimhide {
+      @apply overflow-x-hidden sm:overflow-x-auto
+   }
+}
